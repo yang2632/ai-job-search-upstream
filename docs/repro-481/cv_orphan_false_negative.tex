@@ -1,0 +1,135 @@
+%% Generic moderncv CV - every name, place, employer, date and figure is invented.
+%% An entry header ends page 1 and its first bullet opens page 2: a real orphan.
+%% Compile with: lualatex cv_orphan_false_negative.tex
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{green}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.80]{geometry}
+
+\AtEndPreamble{\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={Toby Mercer - CV},
+    pdfpagemode=UseNone,
+}}
+
+% Entry bullets: the standard itemize after each entry, relabelled with a text bullet
+% and given a narrow first-level indent.
+\renewcommand{\labelitemi}{\textbullet}
+\setlength{\leftmargini}{1.15em}
+\makeatletter
+\renewcommand{\@listi}{\leftmargin\leftmargini \labelsep .35em
+  \labelwidth\leftmargini \advance\labelwidth-\labelsep
+  \topsep 2pt \partopsep 0pt \parsep 0pt \itemsep 2pt}
+\let\@listI\@listi
+\makeatother
+
+\name{Toby}{Mercer}
+\address{41 Example Street, Millford, Freedonia}{}{}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{6pt}
+\small{Happiest at a potting bench with a tray of cuttings, or out on a wet afternoon planting bulbs, after a working life spent on farms, in glasshouses and in public parks. Keeps bees on an allotment at home and grows sweet peas every summer.}
+
+\section{Skills}
+\vspace{1pt}
+{\small
+\begin{itemize}
+    \item Propagation from seed, softwood cuttings, grafting and careful division.
+    \item Glasshouse growing, including ventilation, shading and watering with a can.
+    \item Pruning of fruit trees, old roses, climbing plants and formal hedges.
+    \item Compost making, leaf mould and patient soil improvement on heavy clay.
+    \item Pest and disease recognition, treated without sprays where possible.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\section{Experience}
+\vspace{3pt}
+
+\cventry{1995-2001}{Salad Grower}{Westmere Farm}{Eastbrook, Freedonia}{}{}
+{\small
+\begin{itemize}
+    \item Grew salad crops, brassicas and cut flowers in the open ground and under glass, through every season, in sun and rain alike.
+    \item Sowed the early crops in the cold frames each spring and hardened them off before planting out.
+    \item Mulched the rose beds each spring with leaf mould from the garden's own bays.
+    \item Tied in the climbing roses on the walls every autumn.
+    \item Cut the yew hedges once a year in late summer.
+    \item Sowed wildflower seed along the orchard edges.
+    \item Saved seed from the border plants each autumn and dried it in paper bags.
+    \item Divided the hostas and day lilies whenever the clumps grew crowded.
+    \item Cleared the gutters of the glasshouse roofs after the autumn gales.
+    \item Staked the tall delphiniums before the early summer winds.
+    \item Raked the gravel paths smooth after every heavy rain.
+    \item Lifted and stored the dahlia tubers before the first frosts.
+    \item Wrapped the tender plants in fleece for the winter.
+    \item Pricked out the seedlings into trays as soon as they could be handled.
+    \item Washed the glass of the glasshouses every spring.
+    \item Turned the compost heaps with a fork every few weeks.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\vspace{3pt}
+
+\cventry{1988-1994}{Park Gardener}{Oakfield Park}{Riverton, Freedonia}{}{}
+{\small
+\begin{itemize}
+    \item Mowed, edged and weeded the formal lawns and flower beds around the bandstand, and swept the leaves from the paths every autumn.
+    \item Planted the spring and summer bedding displays twice a year, lifting the tulips and storing them for reuse.
+    \item Laid a new hawthorn hedge along the east boundary and trimmed it every summer.
+    \item Dug a new wildlife pond by the orchard and planted its margins with irises and marsh marigolds.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\vspace{3pt}
+
+\cventry{1981-1987}{Glasshouse Keeper}{Ferndale Plants}{Hartwell, Freedonia}{}{}
+{\small
+\begin{itemize}
+    \item Grew the bedding plants and pot plants for the plant shop from seed and cuttings, and watered the benches from the rain butts.
+    \item Rooted cuttings under upturned jam jars on the potting-shed sill.
+    \item Scrubbed and re-glazed the glasshouse panes each spring.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\vspace{3pt}
+
+\cventry{1975-1980}{Kitchen Gardener}{Lindenhall Estate}{Ashcombe, Freedonia}{}{}
+{\small
+\begin{itemize}
+    \item Worked in the kitchen garden in all weathers, digging, sowing in rows, thinning the seedlings and bringing in the crops.
+    \item Pruned the espalier pears and the fan-trained peaches on the south wall, and tied in the new growth.
+    \item Laid a new cobbled path through the kitchen garden, bedding each cobble in sharp sand, grading the camber so that rain ran off into the borders, and edging it with old roof tiles so that it would last for years without weeds pushing up through the joints, then lining both sides with low box hedging grown from cuttings.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\vspace{3pt}
+
+\cventry{1970-1974}{Orchard Worker}{Elmstead Orchards}{Wexley, Freedonia}{}{}
+{\small
+\begin{itemize}
+    \item Picked, graded and stored the apples and pears through each autumn.
+    \item Cut the long grass between the trees and cleared the ditches each winter.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\section{Education}
+\vspace{1pt}
+
+\cventry{1969}{Certificate in Practical Horticulture}{Brambleton College of Horticulture}{Brambleton, Freedonia}{}{}
+
+\section{Interests}
+\vspace{1pt}
+{\small
+\begin{itemize}
+    \item Fell walking, beekeeping and painting wild flowers in watercolour.
+\end{itemize}\par}
+\addvspace{.5em}
+
+\end{document}
